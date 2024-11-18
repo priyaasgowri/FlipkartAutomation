@@ -33,7 +33,14 @@ public class searchresult extends Baseclass {
 		for (WebElement titleElement : productTitles) {
 			System.out.println(titleElement.getText());
 
+		}
+		//  Get all product titles from the search results
+		List<WebElement> productPrices = driver.findElements(By.cssSelector("[class='Nx9bqj _4b5DiR']"));
 
+		//  Print each product title
+		System.out.println("Product Prices on flipkart search results:");
+		for (WebElement price : productPrices) {
+			System.out.println(price.getText());
 
 		}
 		WebElement particularproducttitle=driver.findElement(By.cssSelector("[class ='KzDlHZ']"));
