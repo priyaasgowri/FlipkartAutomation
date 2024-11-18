@@ -46,6 +46,17 @@ public class searchresult extends Baseclass {
 		WebElement particularproducttitle=driver.findElement(By.cssSelector("[class ='KzDlHZ']"));
 		System.out.println(" One particular item : " + particularproducttitle.getText());
 
+		//get particular product name and price
+
+		WebElement oneproductname=driver.findElement(By.cssSelector("[class='Nx9bqj _4b5DiR']"));
+		WebElement oneproductprice=driver.findElement(By.cssSelector("[class ='KzDlHZ']"));
+		System.out.println("one product name and price: " +oneproductname.getText() +
+		                                "," +oneproductprice.getText());
+
+		driver.quit();
+
+
+
 
 	}
 }
