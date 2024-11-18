@@ -33,11 +33,12 @@ public class searchresult extends Baseclass {
 		for (WebElement titleElement : productTitles) {
 			System.out.println(titleElement.getText());
 
-			//WebElement particularproducttitle=driver.findElement(By.cssSelector("[class ='KzDlHZ']"));
-
 
 
 		}
+		WebElement particularproducttitle=driver.findElement(By.cssSelector("[class ='KzDlHZ']"));
+		System.out.println(" One particular item : " + particularproducttitle.getText());
+
 
 	}
 }
